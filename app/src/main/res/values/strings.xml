@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NadiWeatherApp</string>
+    <string name="add_city">Add City</string>
+    <string name="cities">Cities</string>
+    <string name="temperature">Temperature</string>
+    <string name="description">Description</string>
+    <string name="humidity">Humidity</string>
+    <string name="windspeed">Windspeed</string>
+    <string name="c">°C</string>
+</resources>

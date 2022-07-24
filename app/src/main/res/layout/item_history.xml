@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:padding="10dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/cityImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/dateAndTimeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/cityImg" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/descriptionTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateAndTimeTxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/cityImg"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tempTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateAndTimeTxt"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/descriptionTxt"
+        android:maxLength="2"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/celsiusTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateAndTimeTxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/descriptionTxt"
+        android:text="@string/c"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+</RelativeLayout>
