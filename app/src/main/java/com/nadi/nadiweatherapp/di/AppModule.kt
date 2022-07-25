@@ -2,10 +2,10 @@ package com.nadi.nadiweatherapp.di
 
 import android.content.Context
 import androidx.room.Room
+import com.nadi.data.repository.WeatherRepositoryImplementer
 import com.nadi.data.source.local.database.MainDatabase
 import com.nadi.data.source.local.database.weather.WeatherDAO
 import com.nadi.data.source.remote.openWeatherMap.weather.WeatherAPI
-import com.nadi.data.repository.WeatherRepositoryImplementer
 import com.nadi.domain.weather.repository.WeatherRepository
 import com.nadi.nadiweatherapp.BuildConfig
 import dagger.Binds

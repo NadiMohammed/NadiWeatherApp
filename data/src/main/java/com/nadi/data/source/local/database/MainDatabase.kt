@@ -9,9 +9,11 @@ import com.nadi.data.source.local.database.weather.entity.DatabaseCity
 import com.nadi.data.source.local.database.weather.entity.DatabaseWeather
 import dagger.hilt.android.qualifiers.ApplicationContext
 
-@Database(entities = [DatabaseCity::class, DatabaseWeather::class],
+@Database(
+    entities = [DatabaseCity::class, DatabaseWeather::class],
     version = 1,
-    exportSchema = false)
+    exportSchema = false
+)
 abstract class MainDatabase : RoomDatabase() {
 
     abstract val weatherDAO: WeatherDAO

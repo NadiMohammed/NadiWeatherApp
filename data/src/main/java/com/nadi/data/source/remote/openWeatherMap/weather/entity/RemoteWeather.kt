@@ -23,6 +23,6 @@ fun RemoteWeather.asDomainWeather() = Weather(
     description = weather[0].description,
     temperature = main.temp,
     humidity = main.humidity,
-    windspeed= wind.speed,
+    windspeed = wind.speed,
     icon = weather[0].icon
 )

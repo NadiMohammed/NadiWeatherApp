@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.nadi.domain.weather.entity.City
-import com.nadi.domain.weather.entity.Weather
 import com.nadi.nadiweatherapp.databinding.ItemCitiesSelectorBinding
 
 class CitiesAdapter(private val onClickListener: OnCityClickListener) :

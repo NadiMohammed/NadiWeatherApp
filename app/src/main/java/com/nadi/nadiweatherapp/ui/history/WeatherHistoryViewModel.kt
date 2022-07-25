@@ -1,9 +1,7 @@
 package com.nadi.nadiweatherapp.ui.history
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.nadi.data.source.local.database.weather.entity.DatabaseWeather
 import com.nadi.data.repository.WeatherRepositoryImplementer
 import com.nadi.domain.weather.entity.Weather
 import com.nadi.nadiweatherapp.utils.Status
@@ -16,8 +14,9 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class WeatherHistoryViewModel @Inject constructor(private val weatherRepositoryImplementer: WeatherRepositoryImplementer
-                                                  ) :
+class WeatherHistoryViewModel @Inject constructor(
+    private val weatherRepositoryImplementer: WeatherRepositoryImplementer
+) :
     ViewModel() {
     private val _weather = MutableStateFlow<List<Weather>>(emptyList())
     val weather: StateFlow<List<Weather>> = _weather

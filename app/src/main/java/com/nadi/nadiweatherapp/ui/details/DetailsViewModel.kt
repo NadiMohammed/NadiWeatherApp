@@ -3,7 +3,6 @@ package com.nadi.nadiweatherapp.ui.details
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.nadi.data.repository.WeatherRepositoryImplementer
-import com.nadi.data.source.local.database.weather.entity.DatabaseWeather
 import com.nadi.domain.Result
 import com.nadi.domain.weather.entity.Weather
 import com.nadi.domain.weather.usecases.GetWeatherUseCase

@@ -21,7 +21,7 @@ data class DatabaseWeather(
 fun Weather.asDatabaseModel(): DatabaseWeather {
     return DatabaseWeather(
         cityName = cityName,
-        countryCode= countryCode,
+        countryCode = countryCode,
         dateTime = dateTime,
         description = description,
         temperature = temperature,
@@ -34,7 +34,7 @@ fun Weather.asDatabaseModel(): DatabaseWeather {
 fun DatabaseWeather.asDomainModel(): Weather {
     return Weather(
         cityName = cityName,
-        countryCode= countryCode,
+        countryCode = countryCode,
         dateTime = dateTime,
         description = description,
         temperature = temperature,

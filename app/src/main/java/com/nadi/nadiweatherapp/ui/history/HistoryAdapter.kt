@@ -5,7 +5,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.nadi.data.source.local.database.weather.entity.DatabaseWeather
 import com.nadi.domain.weather.entity.Weather
 import com.nadi.nadiweatherapp.databinding.ItemHistoryBinding
 import com.squareup.picasso.Picasso

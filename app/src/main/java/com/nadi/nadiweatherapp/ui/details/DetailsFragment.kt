@@ -60,13 +60,15 @@ class DetailsFragment : BaseFragment<FragmentDetailsBinding>() {
                             Picasso.get().load(iconUrl).into(binding.weatherImg)
 
                             if (it.countryCode.isNotEmpty()) {
-                                saveWeather(Weather(
-                                    cityName = args.cityName,
-                                    dateTime = currentTimeAndDate(),
-                                    description = it.description,
-                                    temperature = convertKelvinToCelsius(it.temperature),
-                                    icon = iconUrl,
-                                ))
+                                saveWeather(
+                                    Weather(
+                                        cityName = args.cityName,
+                                        dateTime = currentTimeAndDate(),
+                                        description = it.description,
+                                        temperature = convertKelvinToCelsius(it.temperature),
+                                        icon = iconUrl,
+                                    )
+                                )
                             }
 
                         }

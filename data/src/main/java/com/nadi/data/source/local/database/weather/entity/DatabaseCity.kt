@@ -6,7 +6,7 @@ import com.nadi.domain.weather.entity.City
 
 @Entity(tableName = "city")
 data class DatabaseCity(
-   @PrimaryKey val name: String
+    @PrimaryKey val name: String
 )
 
 fun City.asDatabaseModel(): DatabaseCity =

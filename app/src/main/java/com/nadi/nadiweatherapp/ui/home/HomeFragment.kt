@@ -9,7 +9,6 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.findNavController
 import com.hbb20.CountryCodePicker
 import com.nadi.domain.weather.entity.City
-import com.nadi.domain.weather.entity.Weather
 import com.nadi.nadiweatherapp.databinding.FragmentHomeBinding
 import com.nadi.nadiweatherapp.utils.BaseFragment
 import dagger.hilt.android.AndroidEntryPoint
