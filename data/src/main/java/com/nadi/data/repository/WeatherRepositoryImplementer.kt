@@ -15,7 +15,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class WeatherRepositoryImplementer @Inject constructor(
+class  WeatherRepositoryImplementer @Inject constructor(
     private val api: WeatherAPI,
     private val database: MainDatabase,
 ) : WeatherRepository, CallbackHandler() {
